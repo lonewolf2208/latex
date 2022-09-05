@@ -1,6 +1,7 @@
 package com.example.mathongotask.ui
 
 import android.app.AlertDialog
+import android.content.Intent
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
@@ -47,6 +48,9 @@ class QuestionActivity : AppCompatActivity() {
         if(MainActivity.index==0)
         {
             binding.image.isEnabled=false
+        }
+        binding.materialCardView.setOnClickListener {
+            startActivity(Intent(this,MainActivity::class.java))
         }
             adapter= AdapterQuestions(allData[MainActivity.index].options as ArrayList<Option>)
         binding.recycle.adapter=adapter

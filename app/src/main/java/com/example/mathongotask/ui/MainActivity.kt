@@ -35,6 +35,7 @@ class MainActivity : AppCompatActivity() {
         layoutManager = LinearLayoutManager(
             this
         )
+        binding.textView2.text=allData.size.toString()+"Qs | Low Input High Output Chapter"
         binding.recyclerview.layoutManager = layoutManager
         binding.recyclerview.adapter=adapter
         binding.tag.setOnClickListener {
