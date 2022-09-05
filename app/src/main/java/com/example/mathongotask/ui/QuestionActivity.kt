@@ -116,6 +116,7 @@ class QuestionActivity : AppCompatActivity() {
             }
         }
         binding.materialCardView11.setOnClickListener {
+            contentViewModel.insert(arrayListOf(Content(MainActivity.index.toString())))
             MainActivity.index++
             finish()
             overridePendingTransition(0, 0)

@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -41,7 +42,9 @@ class MainActivity : AppCompatActivity() {
         binding.tag.setOnClickListener {
             var content= listOf<Content>()
            wordViewModel.allWords.observe(this@MainActivity){
+
                 content=it
+//               Toast.makeText(this,content.toString(), Toast.LENGTH_SHORT).show()
             }
             if(binding.tag.text=="Not Attempted")
             {
