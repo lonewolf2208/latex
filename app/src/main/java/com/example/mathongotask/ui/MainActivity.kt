@@ -53,10 +53,17 @@ class MainActivity : AppCompatActivity() {
                    }
                     adapter= Adapterhome(newdata)
                     binding.recyclerview.adapter=adapter
+                    adapter.onClickListener(object : Adapterhome.ClickListener {
+                        override fun OnClick(position: Int) {
+                            index=position
+                            startActivity(Intent(this@MainActivity, QuestionActivity::class.java))
+                        }
+                    })
                     adapter.notifyDataSetChanged()
                 }
                 else
                 {
+                    binding.recyclerview.visibility=View.GONE
                    binding.hiddenimage.visibility=View.VISIBLE
                     binding.hiddentext.visibility=View.VISIBLE
                 }
@@ -64,11 +71,18 @@ class MainActivity : AppCompatActivity() {
             }
             else
             {
-                binding.hiddenimage.visibility=View.INVISIBLE
-                binding.hiddentext.visibility=View.INVISIBLE
+                binding.recyclerview.visibility=View.VISIBLE
+                binding.hiddenimage.visibility=View.GONE
+                binding.hiddentext.visibility=View.GONE
                 binding.tag.text="Not Attempted"
                 adapter=Adapterhome(allData)
                 binding.recyclerview.adapter=adapter
+                adapter.onClickListener(object : Adapterhome.ClickListener {
+                    override fun OnClick(position: Int) {
+                        index=position
+                        startActivity(Intent(this@MainActivity, QuestionActivity::class.java))
+                    }
+                })
                 adapter.notifyDataSetChanged()
             }
         }

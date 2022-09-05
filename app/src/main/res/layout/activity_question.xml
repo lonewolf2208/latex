@@ -3,8 +3,8 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:fillViewport="true"
     android:layout_width="match_parent"
+    android:fillViewport="true"
     android:layout_height="match_parent">
 <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
@@ -84,131 +84,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/content" />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textinputlayout1"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="32dp"
-        app:boxCornerRadiusBottomEnd="10dp"
-        app:strokeColor="#989AA6"
-        app:strokeWidth="10dp"
-        app:boxCornerRadiusBottomStart="10dp"
-        app:boxCornerRadiusTopEnd="10dp"
-        app:boxCornerRadiusTopStart="10dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/questiontag">
-            <com.jstarczewski.pc.mathview.src.MathView
-                android:id="@+id/optioncontent1"
-                android:padding="5dp"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="TextView"
-               />
 
-    </com.google.android.material.textfield.TextInputLayout>
 
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/textinputlayout2"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="32dp"
-        app:strokeColor="#989AA6"
-        app:strokeWidth="1dp"
-        app:boxCornerRadiusBottomEnd="10dp"
-        app:boxCornerRadiusBottomStart="10dp"
-        app:boxCornerRadiusTopEnd="10dp"
-        app:boxCornerRadiusTopStart="10dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textinputlayout1">
-
-        <com.jstarczewski.pc.mathview.src.MathView
-            android:id="@+id/optioncontent2"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:editable="false"
-            android:text="TextView" />
-    </com.google.android.material.card.MaterialCardView>
-
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/textinputlayout3"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="12dp"
-        app:strokeColor="#989AA6"
-        app:strokeWidth="1dp"
-        android:layout_marginEnd="32dp"
-        app:boxCornerRadiusBottomEnd="10dp"
-        app:boxCornerRadiusBottomStart="10dp"
-        app:boxCornerRadiusTopEnd="10dp"
-        app:boxCornerRadiusTopStart="10dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textinputlayout2">
-
-        <com.jstarczewski.pc.mathview.src.MathView
-            android:id="@+id/optioncontent3"
-            android:layout_width="match_parent"
-            android:editable="false"
-            android:layout_height="match_parent"
-            android:text="TextView" />
-    </com.google.android.material.card.MaterialCardView>
-
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/textinputlayout4"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        app:strokeColor="#989AA6"
-        app:strokeWidth="1dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="32dp"
-        app:boxCornerRadiusBottomEnd="10dp"
-        app:boxCornerRadiusBottomStart="10dp"
-        app:boxCornerRadiusTopEnd="10dp"
-        app:boxCornerRadiusTopStart="10dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textinputlayout3">
-
-        <com.jstarczewski.pc.mathview.src.MathView
-            android:id="@+id/optioncontent4"
-            android:layout_width="match_parent"
-            android:editable="false"
-            android:layout_height="match_parent"
-            android:text="TextView" />
-    </com.google.android.material.card.MaterialCardView>
-
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/materialCardView1"
-        android:layout_width="36dp"
-        android:layout_height="36dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginBottom="16dp"
-        app:cardCornerRadius="3dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:strokeColor="#989AA6"
-        app:strokeWidth="1dp">
-
-        <ImageView
-            android:id="@+id/imageView21"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingStart="10dp"
-            android:paddingTop="5dp"
-            android:paddingBottom="5dp"
-            app:srcCompat="@drawable/ic_baseline_arrow_back_ios_24" />
-    </com.google.android.material.card.MaterialCardView>
 
     <View
         android:id="@+id/view2"
@@ -224,15 +101,14 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="48dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="48dp"
-        android:enabled="false"
         android:layout_marginBottom="6dp"
+        android:enabled="false"
         android:text="Check Answer"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/materialCardView11"
-        app:layout_constraintStart_toEndOf="@+id/materialCardView1"
+
+        app:layout_constraintStart_toEndOf="@+id/mater"
         app:layout_constraintTop_toBottomOf="@+id/view2" />
 
     <com.google.android.material.card.MaterialCardView
@@ -261,28 +137,52 @@
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="32dp"
         android:text="Solution:"
         android:visibility="invisible"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textinputlayout4" />
+        app:layout_constraintTop_toBottomOf="@+id/recycle" />
 
-    <TextView
+
+    <com.jstarczewski.pc.mathview.src.MathView
         android:id="@+id/solutiontext"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="32dp"
-        android:layout_marginBottom="32dp"
-        android:text="TextView"
-        android:textColor="#000000"
-        android:visibility="invisible"
         app:layout_constraintBottom_toTopOf="@+id/view2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/questiontag" />
 
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/mater"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="16dp"
+        app:cardCornerRadius="3dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="#989AA6"
+        app:strokeWidth="1dp">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            app:srcCompat="@drawable/ic_baseline_arrow_back_ios_24" />
+    </com.google.android.material.card.MaterialCardView>
 </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>
